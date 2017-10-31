@@ -1,0 +1,35 @@
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: chainspl.it
+subtitle: utxo separator
+#email: your-email@example.com
+description: >-
+  Noncustodial service to help people split their coins when blockchains fork.
+baseurl: ""
+url: "http://chainspl.it"
+twitter_username: ChainSplits
+github_username: chainsplit
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+include: ['_pages']
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
