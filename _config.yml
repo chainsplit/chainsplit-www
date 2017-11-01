@@ -16,19 +16,20 @@ github_username: chainsplit
 
 # Build settings
 markdown: kramdown
+sass:
+  sass_dir: _sass
+  style: compressed
 plugins:
   - jekyll-feed
 
 include: ['_pages']
 
 # Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - _config.yml
+  - LICENSE.txt
+  - README.md
+  - CNAME

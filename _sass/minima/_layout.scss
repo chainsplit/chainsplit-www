@@ -2,11 +2,31 @@
  * Site header
  */
 .site-header {
-  border-top: 5px solid $grey-color-dark;
-  border-bottom: 1px solid $grey-color-light;
+  border-top: 5px solid $brand-color;
   min-height: $spacing-unit * 1.865;
+  padding-top: 5px;
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  background: $background-color;
+  @include shadow(0, 1px, 1px, 1px, #111);
 
-  // Positioning context for the mobile navigation icon
+  .wrap {
+    max-width: $content-width;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+  }
+
+  .logo {
+    float: left;
+    height: 54px;
+  }
+}
+
+.main {
+  min-height: 100%;
+  background: $near-white-color;
   position: relative;
 }
 
@@ -20,7 +40,22 @@
 
   &,
   &:visited {
-    color: $grey-color-dark;
+    color: $near-white-color;
+  }
+
+  &:hover { text-decoration: none; }
+}
+
+.site-subtitle {
+  padding-left: 10px;
+
+  &,
+  &:visited {
+    color: $brand-color;
+  }
+
+  @include media-query($on-palm) {
+    display: none;
   }
 }
 
@@ -37,7 +72,7 @@
   }
 
   .page-link {
-    color: $text-color;
+    color: $near-white-color;
     line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
@@ -74,7 +109,7 @@
       text-align: center;
 
       > svg path {
-        fill: $grey-color-dark;
+        fill: $near-white-color;
       }
     }
 
@@ -106,8 +141,15 @@
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid $grey-color-light;
-  padding: $spacing-unit 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: $spacing-unit;
+
+  @include media-query($on-palm) {
+    padding: $spacing-unit / 2;
+  }
 }
 
 .footer-heading {
@@ -176,7 +218,15 @@
  * Page content
  */
 .page-content {
-  padding: $spacing-unit 0;
+  padding: 90px 0 200px 0;
+
+  @include media-query($on-palm) {
+    padding-bottom: 280px;
+  }
+}
+
+#landing-logo {
+  padding-bottom: 20px;
 }
 
 .page-heading {
