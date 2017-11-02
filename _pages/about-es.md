@@ -1,13 +1,13 @@
 ---
 layout: page
-title: About
+title: Acerca
 permalink: /about/
-lang: en
+lang: es
 ---
 
-Noncustodial service to help people split their coins when blockchains fork.
+Servicio no custodial para ayudar a las personas a dividir sus monedas cuando tenedor de bloques.
 
-You can find the source code at GitHub:
+Puedes encontrar el código fuente en Github:
 [chainsplit][chainsplit-org] /
 [chainsplit.github.io](https://github.com/chainsplit/chainsplit.github.io)
 

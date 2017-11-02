@@ -24,6 +24,12 @@ plugins:
 
 include: ['_pages']
 
+# untra/polyglot: internationalization
+languages: ["en", "es"]
+default_lang: "en"
+exclude_from_localization: ["assets", "branding", "docs"]
+parallel_localization: true
+
 # Exclude from processing.
 
 exclude:

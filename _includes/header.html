@@ -2,11 +2,19 @@
 
   <div class="wrap">
     {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}    
+    {% assign page_paths = site.header_pages | default: default_paths %}
     <img src="{{ "/assets/img/logo.jpg" | relative_url }}"
       alt="{{ site.title | escape }} {{ site.subtitle | escape }}" class="logo" />
     <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     <a class="site-title site-subtitle" href="{{ "/" | relative_url }}">{{ site.subtitle | escape }}</a>
+
+    <div class="lang-select">
+      <select>
+        <option value="">English</option>
+        <option value="es">Español</option>
+      </select>
+      <div class="lang-select-arrow"></div>
+    </div>
 
     {% if page_paths %}
       <nav class="site-nav">
@@ -28,7 +36,7 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {% endif %}
           {% endfor %}
-          <a class="page-link" href="/">Home</a>
+          <a class="page-link" href="{{ "/" | relative_url }}">Home</a>
         </div>
       </nav>
     {% endif %}
