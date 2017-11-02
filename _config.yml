@@ -11,7 +11,7 @@ description: >-
   Noncustodial service to help people split their coins when blockchains fork.
 baseurl: ""
 url: "http://chainspl.it"
-twitter_username: ChainSplits
+twitter_username: ChainSplit
 github_username: chainsplit
 
 # Build settings
