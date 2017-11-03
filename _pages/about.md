@@ -8,6 +8,6 @@ Noncustodial service to help people split their coins when blockchains fork.
 
 You can find the source code at GitHub:
 [chainsplit][chainsplit-org]{:target="_blank"} /
-[www](https://github.com/chainsplit/www){:target="_blank"}
+[www](https://github.com/chainsplit/chainsplit.github.io){:target="_blank"}
 
 [chainsplit-org]: https://github.com/chainsplit
