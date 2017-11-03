@@ -33,6 +33,39 @@ To build locally, run:
 
     bundle exec jekyll build --future
 
+### Submitting a Pull Request
+
+Fork this repo to your Github account.
+
+Clone that repo to your local machine:
+
+    git clone git@github.com:{your-username}/chainsplit-www.git
+
+Create a new branch to use for development:
+
+    git checkout -b new-feature-1
+
+__Make your changes__
+
+Add, commit, and push:
+
+    git add .
+    git commit -m 'commit message'
+    git push origin new-feature-1
+
+Back on Github, click `Compare & pull request` button to create the PR.
+
+#### Preview (optional)
+
+If you would like to set up a preview through your fork on Github Pages, run:
+
+    chmod +x deploy-gh-pages.sh
+    ./deploy-gh-pages.sh
+
+In Github repo => Settings => Options (tab) => Github Pages: use `gh-pages` branch
+
+Preview is located at: https://{your-username}.github.io/chainsplit-www/
+
 ## Testing
 
 To test, run:

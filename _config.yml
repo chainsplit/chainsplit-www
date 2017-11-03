@@ -39,3 +39,4 @@ exclude:
   - LICENSE.txt
   - README.md
   - branding
+  - deploy-gh-pages.sh
