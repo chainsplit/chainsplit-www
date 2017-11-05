@@ -27,3 +27,5 @@ This is where chainspl.it comes in.
 Chainspl.it is a service which helps users safely split UTXOs across forks so that users are free to spend their coins without any fears of a replay attack. 
 
 Chainspl.it is non custodial, meaning all of the signing takes place on the user’s end.
+
+For more information please see our ["Introducing chainspl.it, Easily handle forked coins"]("https://www.youtube.com/watch?v=wWkdfnqjpug&feature=youtu.be&a="){:target="_blank"} YouTube video.
