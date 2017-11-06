@@ -13,3 +13,5 @@ we are using to build and explain chainspl.it
 
 
 [Marketing Messaging](https://docs.google.com/document/d/1FB-_HBLP_F8QgrIfuf41ngoR5VrXGeNn7EExWhykurc/edit#heading=h.tw5esbewbcdx "Marketing Messaging"){:target="_blank"}
+
+[Options to implement splitting](https://docs.google.com/spreadsheets/d/122F1jW-8gl7syehhWQluySn8UO3gOQw2TlQIDypnDok){:target="_blank"}
