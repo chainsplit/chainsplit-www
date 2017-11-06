@@ -2,8 +2,9 @@
 
   <div class="wrap">
     {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
-    <img src="/assets/img/logo.jpg" alt="{{ site.title | escape }} {{ site.subtitle | escape }}" class="logo" />
+    {% assign page_paths = site.header_pages | default: default_paths %}    
+    <img src="{{ "/assets/img/logo.jpg" | relative_url }}"
+      alt="{{ site.title | escape }} {{ site.subtitle | escape }}" class="logo" />
     <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
     <a class="site-title site-subtitle" href="{{ "/" | relative_url }}">{{ site.subtitle | escape }}</a>
 
