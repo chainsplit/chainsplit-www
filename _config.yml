@@ -32,4 +32,4 @@ exclude:
   - _config.yml
   - LICENSE.txt
   - README.md
-  - CNAME
+  - branding
