@@ -3,3 +3,9 @@
   -webkit-box-shadow: $h $v $b $s $c;
   box-shadow: $h $v $b $s $c;
 }
+
+@mixin rounded-corners($radius) {
+  border-radius: $radius;
+  -moz-border-radius: $radius;
+  -webkit-border-radius: $radius;
+}

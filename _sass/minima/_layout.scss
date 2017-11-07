@@ -59,6 +59,53 @@
   }
 }
 
+/* language drop down */
+
+.lang-select {
+  position: relative;
+  float: right;
+  margin: 10px 0 0 10px;
+
+  @include media-query($on-palm) {
+    margin: 10px 60px 0 10px;
+  }
+}
+
+.lang-select select {
+  font-family: $base-font-family;
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px 24px 10px 10px;
+  outline: 0;
+  border: 0;
+  @include rounded-corners(5px);
+  background: $brand-color;
+  color: $near-white-color;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.lang-select select:hover,
+.lang-select select:focus {
+  color: $text-color;
+  background: $near-white-color;
+}
+
+.lang-select-arrow {
+  position: absolute;
+  top: 14px;
+  right: 8px;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+  border-style: solid;
+  border-width: 8px 5px 0px 5px;
+  border-color: $grey-color-dark transparent transparent transparent;
+}
+
+/* main navigation */
+
 .site-nav {
   float: right;
   line-height: $base-line-height * $base-font-size * 2.25;
