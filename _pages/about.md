@@ -5,7 +5,7 @@ permalink: /about/
 lang: en
 ---
 
-Noncustodial service to help people split their coins when blockchains fork.
+An open source community-based site helping crypto users, holders, & businesses safely deal with forks. 
 
 You can find the source code at GitHub:
 [chainsplit][chainsplit-org]{:target="_blank"} /
