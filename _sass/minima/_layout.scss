@@ -64,7 +64,7 @@
 .lang-select {
   position: relative;
   float: right;
-  margin: 10px 0 0 10px;
+  margin: 10px 0 0 20px;
 
   @include media-query($on-palm) {
     margin: 10px 60px 0 10px;
@@ -111,7 +111,7 @@
   line-height: $base-line-height * $base-font-size * 2.25;
 
   .nav-trigger {
-      display: none;
+    display: none;
   }
 
   .menu-icon {
@@ -219,9 +219,7 @@
 }
 
 .footer-col {
-
   float: left;
-
   padding: $spacing-unit/5 0 0 $spacing-unit / 2;
 }
 
@@ -272,10 +270,6 @@
   @include media-query($on-palm) {
     padding-bottom: 280px;
   }
-}
-
-#landing-logo {
-  padding-bottom: 20px;
 }
 
 .page-heading {

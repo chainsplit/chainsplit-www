@@ -1,8 +1,9 @@
 <header class="site-header" role="banner">
 
   <div class="wrap">
-    {% assign default_paths = site.pages | map: "path" %}
-    {% assign page_paths = site.header_pages | default: default_paths %}
+    {% assign page_paths = site.pages | where_exp: 'page', 'page.nav >= 0' |
+      sort: 'nav' | map: 'path' %}
+
     <img src="{{ "/assets/img/logo.jpg" | relative_url }}"
       alt="{{ site.title | escape }} {{ site.subtitle | escape }}" class="logo" />
     <a class="site-title" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a>
@@ -36,7 +37,6 @@
             <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
             {% endif %}
           {% endfor %}
-          <a class="page-link" href="{{ "/" | relative_url }}">Home</a>
         </div>
       </nav>
     {% endif %}
