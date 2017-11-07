@@ -5,13 +5,13 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: chainspl.it
-subtitle: utxo separator
-#email: your-email@example.com
+subtitle: safely separate your coins
+email: admin@chainspl.it
 description: >-
   Noncustodial service to help people split their coins when blockchains fork.
 baseurl: ""
 url: "http://chainspl.it"
-twitter_username: ChainSplit
+twitter_username: chainsplit
 github_username: chainsplit
 
 # Build settings
