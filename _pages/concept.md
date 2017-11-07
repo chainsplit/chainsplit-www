@@ -13,7 +13,7 @@ The Bitcoin blockchain computer code is open source (it can be legally copied an
 
 It is important to remember that the blockchain contains every historical transaction and therefore when the blockchain splits each blockchain contains an identical history, right up until the chain split. Due to this shared transaction history, a user who holds rights to coins on the Bitcoin blockchain, before a blockchain split, automatically holds the identical rights to coins on the other chain, at the time of the blockchain split.
 
-If neither of the chains are sporting a new and unique transaction mark, a problem arises whereby, a transaction on one chain is valid on the other chain. In this case transactions on one chain can be replayed on the other chain. A replay is not automatic, nor is it in any way part of the default operation of either chain. A replay attack can be carried out by a malicious party. The point being, that whilst a signed transaction on one chain can be repeated on the other chain, the coins are essetially stuck together.
+If neither of the chains are sporting a new and unique transaction mark, a problem arises whereby, a transaction on one chain is valid on the other chain. In this case transactions on one chain can be replayed on the other chain. A replay is not automatic, nor is it in any way part of the default operation of either chain. A replay attack can be carried out by a malicious party. The point being, that whilst a signed transaction on one chain can be repeated on the other chain, the coins are essentially stuck together.
 
 This is where chainspl.it comes in. 
 
