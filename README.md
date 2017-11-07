@@ -1,8 +1,8 @@
 # chainsplit-www
 
-Source code for the website of [chainspl.it](http://chainspl.it) generated with Jekyll.
+Source code for the website of [chainspl.it](https://chainspl.it) generated with Jekyll.
 
-Development mirror is located at [dev.chainspl.it](http://dev.chainspl.it).
+Development mirror is located at: [https://chainsplit.github.io/chainsplit-www](https://chainsplit.github.io/chainsplit-www).
 
 ## Contributing
 
@@ -41,11 +41,12 @@ To test, run:
 
 ## Deploying
 
-First, install `ruby`, `bundler`, clone this repo, execute `bundle install`.
+First, install `ruby`, `bundler`, and clone this repo.
 
 Then, to deploy or update production code, run:
 
     git pull
+    bundle install
     bundle exec jekyll build
 
 Webserver must be configured to serve out of `_site` folder where Jekyll builds to.

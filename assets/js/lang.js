@@ -1,6 +1,6 @@
 $(function() {
 
-  var baseUrl = '/chainsplit.github.io';
+  var baseUrl = '/chainsplit-www';
   var path = window.location.pathname;
 
   // lang-select selection based on language from url path
@@ -19,7 +19,7 @@ $(function() {
     }
 
     // remove old lang path
-    path = path.replace(/\/[a-z]{2}\//, '/');
+    path = path.replace(/\/[a-z]{2}\//, '');
 
     // build new path
     if( this.value == 'en' ) {
