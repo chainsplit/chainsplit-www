@@ -3,6 +3,7 @@ layout: page
 title: About
 permalink: /about/
 lang: en
+nav: 2
 ---
 
 An open source community-based site helping crypto users, holders, & businesses safely deal with forks. 

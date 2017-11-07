@@ -2,6 +2,7 @@
 layout: page
 title: Docs
 permalink: /docs/
+nav: 3
 ---
 
 This is our chainspl.it library.
