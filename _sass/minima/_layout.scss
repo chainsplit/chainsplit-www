@@ -195,16 +195,9 @@
   padding: 0 0 0 $spacing-unit;
   background-color:$grey-color-dark;
 
-  .wrap {
-    max-width: $content-width;
-    margin-right: auto ;
-    margin-left: auto;
-    position: relative;
-  }
   @include media-query($on-palm) {
     padding: $spacing-unit / 2;
   }
-
 }
 
 .footer-heading {
