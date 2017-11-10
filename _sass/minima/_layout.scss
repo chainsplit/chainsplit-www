@@ -192,7 +192,8 @@
   bottom: 0;
   left: 0;
   right: 0;
-  padding: $spacing-unit;
+  padding: $spacing-unit/2 0;
+  background-color:$grey-color-dark;
 
   @include media-query($on-palm) {
     padding: $spacing-unit / 2;
@@ -218,9 +219,10 @@
 }
 
 .footer-col {
+
   float: left;
-  margin-bottom: $spacing-unit / 2;
-  padding-left: $spacing-unit / 2;
+
+  padding: $spacing-unit/5 0 0 $spacing-unit / 2;
 }
 
 .footer-col-1 {
