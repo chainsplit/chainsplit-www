@@ -22,7 +22,7 @@ body {
   height: 100%;
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
-  background-color: $grey-color-light;
+  background-color: $near-white-color;
   -webkit-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
      -moz-font-feature-settings: "kern" 1;
@@ -105,7 +105,7 @@ a {
   }
 
   &:hover {
-    color: $text-color;
+    color: darken($brand-color, 15%);
     text-decoration: underline;
   }
 
