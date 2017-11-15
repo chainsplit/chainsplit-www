@@ -4,7 +4,7 @@
 
 $base-font-family: "Ubuntu", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 $base-font-size:   16px !default;
-$base-font-weight: 400 !default;
+$base-font-weight: 300 !default;
 $small-font-size:  $base-font-size * 0.875 !default;
 $base-line-height: 1.5 !default;
 
@@ -14,6 +14,9 @@ $text-color:       #111 !default;
 $background-color: #095577 !default;
 $brand-color:      #58b7e1 !default;
 
+$btn-bgcolor-primary:#58b7e1 !default;
+$btn-radius:       3px !default;
+
 $near-white-color: #fdfdfd !default;
 
 $grey-color:       #828282 !default;
@@ -21,7 +24,7 @@ $grey-color-light: lighten($grey-color, 40%) !default;
 $grey-color-dark:  darken($grey-color, 40%) !default;
 
 // Width of the content area
-$content-width:    800px !default;
+$content-width:    900px !default;
 
 $on-palm:          600px !default;
 $on-laptop:        800px !default;
