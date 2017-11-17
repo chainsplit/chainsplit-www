@@ -3,6 +3,7 @@ layout: page
 title: Acerca
 permalink: /about/
 lang: es
+nav: 2
 ---
 
 Servicio no custodial para ayudar a las personas a dividir sus monedas cuando tenedor de bloques.
