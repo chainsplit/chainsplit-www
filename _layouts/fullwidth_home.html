@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {% include head.html %}
+
+  <body>
+    {% include header.html %}
+
+    <div class="wrapper fullwidth main">
+      <main class="page-content" aria-label="Content">
+
+        {% if site.posts.size > 0 %}
+
+        <h1 class="page-heading"></h1>
+
+            {{ content}}
+
+        {% endif %}
+      </main>
+
+    </div>
+
+    {% include footer.html %}
+  </body>
+
+</html>
