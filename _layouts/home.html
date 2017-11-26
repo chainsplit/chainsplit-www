@@ -1,29 +1,63 @@
 ---
-layout: default
+layout: fullwidth_home
 ---
+<blockquote>
+    <p></p>
+</blockquote>
 
-<div class="home">
+<div class="mxn2 flex flex-wrap coins ">
 
-  {{ content }}
+    <table>
+        <thead>
+            <th></th>
+            <th>Block #</th>
+            <th>Replay protection</th>
+            <th>Segwit</th>
+            <th></th>
+        </thead>
+        <tbody>
+            {% for post in site.posts %}
+             {% if post.hide == False   %}
+            <tr>
+                <td><b>{{ post.title }}</b></td>
+                <td>{{ post.block }}</td>
+                <td>
+                    {% if post.replay %} <i class="fa fa-check-square olive" aria-hidden="true"></i> {{ post.replay }} {% else %} <i class="fa fa-minus-circle red" aria-hidden="true"></i> {% endif %}
 
-  {% if site.posts.size > 0 %}
+                </td>
+                <td>{% if post.segwit %} <i class="fa fa-check-square olive" aria-hidden="true"></i>  {% else %} <i class="fa fa-minus-circle red" aria-hidden="true"></i> {% endif %}</td>
+                <td><a class="" href="{{ post.url | relative_url }}" class="btn btn-primary">more</a></td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+        </tbody>
 
-    <h1 class="page-heading">Posts</h1>
+</table>
 
-    <ul class="post-list">
-      {% for post in site.posts %}
-        <li>
-          {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-          <span class="post-meta">{{ post.date | date: date_format }}</span>
 
-          <h2>
-            <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-          </h2>
-        </li>
-      {% endfor %}
-    </ul>
 
-    <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | relative_url }}">via RSS</a></p>
+<!--
+    {% for post in site.posts %}
+    {% if post.hide == False   %}
+        <div class="px2 col-12 sm-col-6 md-col-4  ">
+           <div class="">
+               <h3>{{ post.title }}</h3>
+               <h5>block :  {{ post.block }}</h5>
 
-  {% endif %}
+               {% if post.replay %}
+                <h5>replay protection: <b>{{ post.replay }}</b></h5>
+               {% else%}
+                <h5>replay protection: <b class="orange">No</b></h5>
+               {% endif %}
+
+               <h5>segwit: <b>{% if post.segwit %}<i class="fa fa-check-square olive" aria-hidden="true"></i> Yes
+                   {% else %} <b class="orange">No</b> {% endif %}</b></h5>
+               <p>
+                <a class="btn btn-primary" href="{{ post.url | relative_url }}" class="btn btn-primary">more</a>
+               </p>
+           </div>
+        </div>
+    {% endif %}
+    {% endfor %}
+-->
 </div>
