@@ -16,7 +16,7 @@ layout: fullwidth_home
             <th></th>
         </thead>
         <tbody>
-            {% for post in site.posts %}
+            {% for post in site.posts reversed  %}
              {% if post.hide == False   %}
             <tr>
                 <td><b>{{ post.title }}</b></td>
