@@ -40,3 +40,7 @@ exclude:
   - README.md
   - branding
   - deploy-gh-pages.sh
+
+collections:
+  forks:
+    output: true

@@ -188,7 +188,7 @@
  * Site footer
  */
 .site-footer {
-  position: relative;
+  position: absolute;
   bottom: 0;
   left: 0;
   right: 0;
@@ -220,7 +220,7 @@
 
 .footer-col {
   float: left;
-  padding: $spacing-unit/5 0 0 $spacing-unit / 2;
+  margin: $spacing-unit/2 0 0 $spacing-unit/2;
 }
 
 .footer-col-1 {
@@ -265,7 +265,8 @@
  * Page content
  */
 .page-content {
-  padding: 90px 0 60px 0;
+  padding-top: 90px;
+  padding-bottom: 120px;
 
   @include media-query($on-palm) {
     padding-bottom: 280px;
