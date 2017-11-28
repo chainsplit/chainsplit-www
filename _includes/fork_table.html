@@ -1,0 +1,32 @@
+<table>
+    <thead>
+        <tr>
+            <th>Fork from</th>
+            <th>Fork height</th>
+            <th>Replay protection (Bitcoin)</th>
+            <th>Replay protection (fork parent)</th>
+            <th>Segwit</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+          <td data-label="Fork from">{{ page.parent_chain }}</td>
+          <td data-label="Fork height">{{ page.block }}</td>
+          <td data-label="RP (Bitcoin)">
+            {% if page.replay_bitcoin %}
+              <i class="fa fa-check-square olive" aria-label="Has replay protection"></i> {{ page.replay_bitcoin }}
+            {% else %}
+              <i class="fa fa-minus-circle red" aria-label="No replay protection"></i>
+            {% endif %}
+          </td>
+          <td data-label="RP (fork parent)">
+            {% if page.replay %}
+              <i class="fa fa-check-square olive" aria-label="Has replay protection"></i> {{ page.replay }}
+            {% else %}
+              <i class="fa fa-minus-circle red" aria-label="No replay protection"></i>
+            {% endif %}
+          </td>
+          <td data-label="Segwit">{% if page.segwit %} <i class="fa fa-check-square olive" aria-label="Has segwit"></i>  {% else %} <i class="fa fa-minus-circle red" aria-label="No segwit"></i> {% endif %}</td>
+        </tr>
+    </tbody>
+</table>

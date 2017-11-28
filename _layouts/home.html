@@ -1,37 +1,49 @@
 ---
-layout: fullwidth_home
+layout: default
 ---
-<blockquote>
-    <p></p>
-</blockquote>
 
-<div class="mxn2 flex flex-wrap coins ">
+<header class="post-header">
+  <h1 class="post-title">Bitcoin hard forks</h1>
+</header>
 
-    <table>
-        <thead>
-            <th></th>
-            <th>Block #</th>
-            <th>Replay protection</th>
-            <th>Segwit</th>
-            <th></th>
-        </thead>
-        <tbody>
-            {% for post in site.posts reversed  %}
-             {% if post.hide == False   %}
-            <tr>
-                <td><b>{{ post.title }}</b></td>
-                <td>{{ post.block }}</td>
-                <td>
-                    {% if post.replay %} <i class="fa fa-check-square olive" aria-hidden="true"></i> {{ post.replay }} {% else %} <i class="fa fa-minus-circle red" aria-hidden="true"></i> {% endif %}
+<p>A list of known Bitcoin hard forks, including forks-of-forks.</p>
 
-                </td>
-                <td>{% if post.segwit %} <i class="fa fa-check-square olive" aria-hidden="true"></i>  {% else %} <i class="fa fa-minus-circle red" aria-hidden="true"></i> {% endif %}</td>
-                <td><a class="" href="{{ post.url | relative_url }}" class="btn btn-primary">more</a></td>
-            </tr>
-            {% endif %}
-            {% endfor %}
-        </tbody>
-
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Fork from</th>
+        <th>Fork height</th>
+        <th>Replay protection (Bitcoin)</th>
+        <th>Replay protection (fork parent)</th>
+        <th>Segwit</th>
+    </thead>
+    <tbody>
+        {% assign forks = site.forks | sort: 'date' %}
+        {% for fork in forks %}
+        {% if fork.hide == False %}
+        <tr>
+            <td data-label="Name"><b><a href="{{ fork.url | relative_url }}">{{ fork.title }}</a></b></td>
+            <td data-label="Fork from">{{ fork.parent_chain }}</td>
+            <td data-label="Fork height">{{ fork.block }}</td>
+            <td data-label="RP (Bitcoin)">
+                {% if fork.replay_bitcoin %}
+                  <i class="fa fa-check-square olive" aria-label="Has replay protection"></i>
+                {% else %}
+                  <i class="fa fa-minus-circle red" aria-label="No replay protection"></i>
+                {% endif %}
+            </td>
+            <td data-label="RP (fork parent)">
+                {% if fork.replay %}
+                  <i class="fa fa-check-square olive" aria-label="Has replay protection"></i>
+                {% else %}
+                  <i class="fa fa-minus-circle red" aria-label="No replay protection"></i>
+                {% endif %}
+            </td>
+            <td data-label="Segwit">{% if fork.segwit %} <i class="fa fa-check-square olive" aria-label="Has segwit"></i>  {% else %} <i class="fa fa-minus-circle red" aria-label="No segwit"></i> {% endif %}</td>
+        </tr>
+        {% endif %}
+        {% endfor %}
+    </tbody>
 </table>
 
-</div>
+<p>Disclaimer: We do not endorse any forks. Instead, we provide known information about them that is subject to change as we continue to learn more.</p>
