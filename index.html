@@ -9,10 +9,13 @@
   <title>chainspl.it | Home</title>
   <meta name="description" content="An open source community-based site helping crypto users, holders, &amp; businesses safely deal with forks.">
 
-  <link rel="stylesheet" href="/chainsplit-www/assets/main.css">
   <link rel="canonical" href="http://chainspl.it/chainsplit-www/">
   <link rel="alternate" type="application/rss+xml" title="chainspl.it" href="/chainsplit-www/feed.xml">
-  
+  <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/ace-css/css/ace.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="/chainsplit-www/assets/main.css">
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="/chainsplit-www/assets/js/lang.js"></script>
 
@@ -77,23 +80,100 @@
 </header>
 
 
-    <div class="wrapper main">
-      <main class="page-content" aria-label="Content">
-        <div class="home">
+    <div class="main">
+      <main class="wrapper page-content" aria-label="Content">
+        <header class="post-header">
+  <h1 class="post-title">Bitcoin Forks</h1>
+</header>
 
-  <p><img src="/chainsplit-www/assets/img/chainspl.it-header-3.jpg" alt="chainspl.it safely separate your coins" /></p>
+<p>A known list of Bitcoin forks, including forks-of-forks.</p>
 
-<h2 class="page-heading" id="available-soon">Available Soon</h2>
+<table>
+    <thead>
+        <th>Name</th>
+        <th>Fork height</th>
+        <th>Replay protection</th>
+        <th>Segwit</th>
+    </thead>
+    <tbody>
+        
+        
+        
+        <tr>
+            <td><b><a href="/chainsplit-www/forks/clashic.html">Clashic</a></b></td>
+            <td>478559</td>
+            <td>
+                 <i class="fa fa-minus-circle red" aria-label="No replay protection"></i> 
+            </td>
+            <td> <i class="fa fa-minus-circle red" aria-label="No segwit"></i> </td>
+        </tr>
+        
+        
+        
+        <tr>
+            <td><b><a href="/chainsplit-www/forks/gold.html">Gold</a></b></td>
+            <td>491407</td>
+            <td>
+                 <i class="fa fa-check-square olive" aria-label="Has replay protection"></i> sighash_forkid 
+            </td>
+            <td> <i class="fa fa-check-square olive" aria-label="Has segwit"></i>  </td>
+        </tr>
+        
+        
+        
+        <tr>
+            <td><b><a href="/chainsplit-www/forks/cash.html">Cash</a></b></td>
+            <td>504032</td>
+            <td>
+                 <i class="fa fa-check-square olive" aria-label="Has replay protection"></i> sighash_forkid 
+            </td>
+            <td> <i class="fa fa-minus-circle red" aria-label="No segwit"></i> </td>
+        </tr>
+        
+        
+        
+        <tr>
+            <td><b><a href="/chainsplit-www/forks/2x.html">2X</a></b></td>
+            <td>494784</td>
+            <td>
+                 <i class="fa fa-minus-circle red" aria-label="No replay protection"></i> 
+            </td>
+            <td> <i class="fa fa-minus-circle red" aria-label="No segwit"></i> </td>
+        </tr>
+        
+        
+        
+        <tr>
+            <td><b><a href="/chainsplit-www/forks/diamond.html">Diamond</a></b></td>
+            <td>495866</td>
+            <td>
+                 <i class="fa fa-minus-circle red" aria-label="No replay protection"></i> 
+            </td>
+            <td> <i class="fa fa-check-square olive" aria-label="Has segwit"></i>  </td>
+        </tr>
+        
+        
+        
+        <tr>
+            <td><b><a href="/chainsplit-www/forks/superbitcoin.html">SuperBitcoin</a></b></td>
+            <td>498888</td>
+            <td>
+                 <i class="fa fa-minus-circle red" aria-label="No replay protection"></i> 
+            </td>
+            <td> <i class="fa fa-check-square olive" aria-label="Has segwit"></i>  </td>
+        </tr>
+        
+        
+    </tbody>
+</table>
 
-
-  
-</div>
+<!--
+    
+-->
 
       </main>
 
-    </div>
-
-    <footer class="site-footer">
+      <footer class="site-footer">
 
 
 <div class="wrapper">
@@ -138,6 +218,7 @@
 </div>
 </footer>
 
+    </div>
   </body>
 
 </html>
