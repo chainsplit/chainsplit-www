@@ -5,7 +5,6 @@ date: 2017-11-13
 block: 504032
 replay: sighash_forkid
 segwit: No
-page_url:
 project_url: http://bitcoincash.org/
 address_format: bitcoin (bech32 in discussion)
 repo: https://github.com/Bitcoin-ABC/bitcoin-abc

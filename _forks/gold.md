@@ -5,7 +5,6 @@ date: 2017-10-25
 block: 491407
 replay: sighash_forkid
 segwit: Yes
-page_url:
 project_url: https://bitcoingold.org
 address_format: btg
 repo: https://github.com/BTCGPU/BTCGPU

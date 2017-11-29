@@ -13,9 +13,35 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 
+   <style type="text/css">
+    /* The main DIV for the map */
+    .subway-map
+    {
+        margin: 0;
+        width: 720px;
+        height:410px;
+        background-color: white;
+    }
+
+    /* Text labels */
+    .text
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    .subway-map span
+    {
+        margin: 5px 5px 5px 0;
+    }
+
+    </style>
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="{{ '/assets/js/lang.js' | relative_url }}"></script>
-
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.9.0.min.js"></script>
+  <script type="text/javascript" src="{{ "/assets/js/jquery.subwayMap-0.5.0.js" | relative_url }}"></script>
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
   {% endif %}

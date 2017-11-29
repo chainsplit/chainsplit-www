@@ -5,7 +5,6 @@ date: 2017-08-01
 block: 478559
 replay: No
 segwit: No
-page_url:
 project_url: http://bitcoinclashic.org
 address_format: bitcoin
 repo: https://github.com/Bitcoin-Clashic/bitcoin-clashic

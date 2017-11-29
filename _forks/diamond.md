@@ -5,7 +5,6 @@ date: 2017-11-20
 block: 495866
 replay: No
 segwit: Yes
-page_url:
 project_url: http://btcd.io/
 address_format:
 repo: https://github.com/Bitcoin-Diamond/BitcoinDiamond
