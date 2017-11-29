@@ -11,7 +11,7 @@
 
   <link rel="canonical" href="http://chainspl.it/chainsplit-www/forks/2x.html">
   <link rel="alternate" type="application/rss+xml" title="chainspl.it" href="/chainsplit-www/feed.xml">
-  <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet">
+  <!-- <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet"> -->
   <link href="https://unpkg.com/ace-css/css/ace.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="/chainsplit-www/assets/main.css">
@@ -38,7 +38,7 @@
     <div class="lang-select">
       <select>
         <option value="">English</option>
-        <option value="es">Español</option>
+        <!-- <option value="es">Español</option> -->
       </select>
       <div class="lang-select-arrow"></div>
     </div>
@@ -85,7 +85,7 @@
         <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
   <header class="post-header">
-    <a href="/chainsplit-www/">Bitcoin Forks</a> / 2X
+    <a href="/chainsplit-www/">Bitcoin hard forks</a> / 2X
     <hr>
     <h1>2X</h1>
   </header>
@@ -98,19 +98,39 @@
 <table>
     <thead>
         <tr>
+            <th>Fork from</th>
             <th>Fork height</th>
-            <th>Replay protection</th>
+            <th>Replay protection (Bitcoin)</th>
+            <th>Replay protection (fork parent)</th>
             <th>Segwit</th>
         </tr>
     </thead>
     <tbody>
         <tr>
-          <td>494784</td>
-          <td> <i class="fa fa-minus-circle red" aria-label="No replay protection"></i> </td>
-          <td> <i class="fa fa-minus-circle red" aria-label="No segwit"></i> </td>
+          <td data-label="Fork from">Gold</td>
+          <td data-label="Fork height">494784</td>
+          <td data-label="RP (Bitcoin)">
+            
+              <i class="fa fa-check-square olive" aria-label="Has replay protection"></i> sighash_forkid
+            
+          </td>
+          <td data-label="RP (fork parent)">
+            
+              <i class="fa fa-minus-circle red" aria-label="No replay protection"></i>
+            
+          </td>
+          <td data-label="Segwit"> <i class="fa fa-check-square olive" aria-label="Has segwit"></i>  </td>
         </tr>
     </tbody>
 </table>
+
+<h4 id="technical-info">Technical Info:</h4>
+
+<ul>
+  <li>Pre-mine (coins): 200,000</li>
+</ul>
+
+<hr />
 
 <p><a href="https://github.com/bitcoin2m/BitcoinX" target="_blank">Repository <i class="fa fa-external-link" aria-hidden="true"></i></a></p>
 
