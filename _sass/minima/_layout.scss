@@ -66,8 +66,9 @@
   float: right;
   margin: 10px 0 0 20px;
 
-  @include media-query($on-palm) {
-    margin: 10px 60px 0 10px;
+  @include media-query($on-laptop) {
+    position: absolute;
+    right: 60px;
   }
 }
 
@@ -128,7 +129,7 @@
     }
   }
 
-  @include media-query($on-palm) {
+  @include media-query($on-laptop) {
     position: absolute;
     top: 9px;
     right: $spacing-unit / 2;
@@ -267,6 +268,10 @@
 .page-content {
   padding-top: 90px;
   padding-bottom: 120px;
+
+  @include media-query($on-laptop) {
+    padding-bottom: 200px;
+  }
 
   @include media-query($on-palm) {
     padding-bottom: 280px;

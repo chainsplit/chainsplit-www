@@ -4,7 +4,10 @@ title: Gold
 date: 2017-10-25
 block: 491407
 replay: sighash_forkid
+replay_bitcoin: sighash_forkid
 segwit: Yes
+page_url:
+parent_chain: Bitcoin
 project_url: https://bitcoingold.org
 address_format: btg
 repo: https://github.com/BTCGPU/BTCGPU
@@ -29,6 +32,8 @@ repo: https://github.com/BTCGPU/BTCGPU
 - sighash changes - <a href="https://github.com/BTCGPU/BTCGPU/pull/109/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
 
 - segwit address support - <a href="https://github.com/BTCGPU/BTCGPU/issues/215"><i class="fa fa-external-link" aria-hidden="true"></i></a>
+
+----
 
 <a href="{{ page.repo }}" target="_blank">Repository <i class="fa fa-external-link" aria-hidden="true"></i></a>
 

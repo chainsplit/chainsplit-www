@@ -3,8 +3,11 @@ layout: coin
 title: Clashic
 date: 2017-08-01
 block: 478559
-replay: No
+replay: sighash_forkid
+replay_bitcoin: sighash_forkid
 segwit: No
+page_url:
+parent_chain: Bitcoin
 project_url: http://bitcoinclashic.org
 address_format: bitcoin
 repo: https://github.com/Bitcoin-Clashic/bitcoin-clashic
@@ -17,6 +20,8 @@ repo: https://github.com/Bitcoin-Clashic/bitcoin-clashic
 #### Technical Info:
 
 - Address Format: {{ page.address_format }}
+
+----
 
 <a href="{{ page.repo }}" target="_blank">Repository <i class="fa fa-external-link" aria-hidden="true"></i></a>
 

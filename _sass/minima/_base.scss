@@ -252,6 +252,12 @@ table {
   }
   td {
     border: 1px solid $grey-color-light;
+    @include media-query($on-palm) {
+      border: none;
+      border-bottom: 1px solid $grey-color-light;
+      position: relative;
+      padding-left: 50%;
+    }
   }
 
   td.with-icon {
@@ -271,4 +277,31 @@ table {
     }
   }
 
+}
+
+/* Tables: responsive */
+@include media-query($on-palm) {
+
+  table, thead, tbody, th, td, tr {
+    display: block;
+  }
+
+  thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  tr { border: 1px solid darken($grey-color-light, 12%); }
+
+  td:before {
+    position: absolute;
+    top: $spacing-unit / 3;
+    left: $spacing-unit / 2;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  td:before { content: attr(data-label); }
 }

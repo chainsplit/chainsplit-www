@@ -6,7 +6,7 @@ layout: default
   <h1 class="post-title">Bitcoin Forks</h1>
 </header>
 
-<p>A overview of Bitcoin forks, including forks-of-forks.</p>
+<p>A overview of Bitcoin hard forks, including forks-of-forks.</p>
 
 <hr >
 
@@ -59,17 +59,19 @@ layout: default
              <li data-coords="11,5" data-dir="E"  ></li>
              <li data-coords="15,5" data-marker="" data-labeltext="2X" data-labelPos="E"> </li>
         </ul>
-    </div>
-    <script type="text/javascript">
-        $(".subway-map").subwayMap({ debug: false });
-    </script>
+</div>
+<script type="text/javascript">
+    $(".subway-map").subwayMap({ debug: false });
+</script>
 
 
 <table>
     <thead>
         <th>Name</th>
+        <th>Fork from</th>
         <th>Fork height</th>
-        <th>Replay protection</th>
+        <th>Replay protection (Bitcoin)</th>
+        <th>Replay protection (fork parent)</th>
         <th>Segwit</th>
     </thead>
     <tbody>
@@ -77,20 +79,29 @@ layout: default
         {% for fork in forks %}
         {% if fork.hide == False %}
         <tr>
-            <td><b><a href="{{ fork.url | relative_url }}">{{ fork.title }}</a></b></td>
-            <td>{{ fork.block }}</td>
-            <td>
-                {% if fork.replay %} <i class="fa fa-check-square olive" aria-label="Has replay protection"></i> {{ fork.replay }} {% else %} <i class="fa fa-minus-circle red" aria-label="No replay protection"></i> {% endif %}
+            <td data-label="Name"><b><a href="{{ fork.url | relative_url }}">{{ fork.title }}</a></b></td>
+            <td data-label="Fork from">{{ fork.parent_chain }}</td>
+            <td data-label="Fork height">{{ fork.block }}</td>
+            <td data-label="RP (Bitcoin)">
+                {% if fork.replay_bitcoin %}
+                  <i class="fa fa-check-square olive" aria-label="Has replay protection"></i>
+                {% else %}
+                  <i class="fa fa-minus-circle red" aria-label="No replay protection"></i>
+                {% endif %}
             </td>
-            <td>{% if fork.segwit %} <i class="fa fa-check-square olive" aria-label="Has segwit"></i>  {% else %} <i class="fa fa-minus-circle red" aria-label="No segwit"></i> {% endif %}</td>
+            <td data-label="RP (fork parent)">
+                {% if fork.replay %}
+                  <i class="fa fa-check-square olive" aria-label="Has replay protection"></i>
+                {% else %}
+                  <i class="fa fa-minus-circle red" aria-label="No replay protection"></i>
+                {% endif %}
+            </td>
+            <td data-label="Segwit">{% if fork.segwit %} <i class="fa fa-check-square olive" aria-label="Has segwit"></i>  {% else %} <i class="fa fa-minus-circle red" aria-label="No segwit"></i> {% endif %}</td>
         </tr>
         {% endif %}
         {% endfor %}
     </tbody>
 </table>
 
-<hr >
-
-
-
+<p>Disclaimer: We do not endorse any forks. Instead, we provide known information about them that is subject to change as we continue to learn more.</p>
 
