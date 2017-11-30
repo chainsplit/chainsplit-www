@@ -10,9 +10,9 @@ layout: default
 
 <hr >
 
-<div class="subway-map" data-columns="16" data-rows="10" data-cellSize="40" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="10">
+<div class="subway-map" style="display: none" data-columns="16" data-rows="10" data-cellSize="40" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="10">
         <ul data-color="#1f78b1" data-label="Bitcoin" data-shiftCoords="0,-1" >
-            <li data-coords="0.77,1"  data-labeltext="Bitcoin">Bitcoin</li>
+            <li data-coords="0.77,1"  data-labeltext="Bitcoin"> </li>
             <li data-coords="0.77,0.77" data-marker="@interchange" > </li> <!-- marker-only node, moved up by 0.10 -->
             <li data-coords="3,1"  data-labeltext="478559" data-marker="@station" > </li>
             <li data-coords="4.5,1"data-labeltext="segwit" > </li>
@@ -23,8 +23,8 @@ layout: default
         </ul>
 
         <ul data-color="#9fada2" data-labeltext="Diamond" data-label="Diamond">
-             <li data-coords="10,0.77"  > </li>
-             <li data-coords="11,3"   ></li>
+             <li data-coords="10,0.77" > </li>
+             <li data-coords="11,3" ></li>
              <li data-coords="15,3" data-labeltext="Diamond" data-marker="" data-labelPos="E"> </li>
         </ul>
 
@@ -43,7 +43,7 @@ layout: default
 
         <ul data-color="#2db2df" data-label="Cash">
              <li data-coords="8,6" > </li> <!-- marker-only node, moved up by 0.20 -->
-             <li data-coords="9,7" data-dir="E" data-marker="station"  > </li>
+             <li data-coords="9,7" data-dir="E" ></li>
              <li data-coords="15,7" data-marker="" data-labeltext="Cash" data-labelPos="E"> </li>
         </ul>
 
@@ -62,6 +62,7 @@ layout: default
 </div>
 <script type="text/javascript">
     $(".subway-map").subwayMap({ debug: false });
+    $(".subway-map").show();
 </script>
 
 
@@ -103,5 +104,7 @@ layout: default
     </tbody>
 </table>
 
-<p>Disclaimer: We do not endorse any forks. Instead, we provide known information about them that is subject to change as we continue to learn more.</p>
+<p><i>Disclaimer: We do not endorse any forks. Instead, we provide known information about them that is subject to change as we continue to learn more.</i></p>
 
+<br />
+<br />

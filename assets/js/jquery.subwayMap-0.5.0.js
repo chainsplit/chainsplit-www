@@ -374,12 +374,11 @@ THE SOFTWARE.
 
         }
         if (data.labeltext !== ""){
-            ctx.font = " 15px sans-serif";
+            ctx.font = '300 14px/1.5 "Ubuntu","Helvetica Neue",Helvetica,Arial,sans-serif';
             ctx.fillStyle = '#111';
-            ctx.fillText(data.labeltext, x -6  ,y -12);
+            ctx.fillText(data.labeltext, x -6  ,y -13);
         }
         ctx.fillStyle = bgColor; // reset color
-
         ctx.closePath();
         ctx.stroke();
         ctx.fill();
@@ -426,9 +425,7 @@ THE SOFTWARE.
         if (data.link != "")
             $("<a " + style + " title='" + data.title.replace(/\\n/g,"<br />") + "' href='" + data.link + "' target='_new'>" + data.label.replace(/\\n/g,"<br />") + "</span>").appendTo(el);
         else
-            //$("<span " + style + ">" + data.label.replace(/\\n/g,"<br />") + "</span>").appendTo(el);
-            //$("<canvas><>")
-            console.log();
+            $("<span " + style + ">" + data.label.replace(/\\n/g,"<br />") + "</span>").appendTo(el);
 
     },
     _drawGrid: function (el, scale, gridNumbers) {
