@@ -19,7 +19,3 @@ address_format: 2m
 - Pre-mine (coins): 210,000
 
 - Address Format: {{ page.address_format }}
-
-----
-
-<a href="{{ page.project_url }}" target="_blank">Project website <i class="fa fa-external-link" aria-hidden="true"></i></a>

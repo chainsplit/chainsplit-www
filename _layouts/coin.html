@@ -11,7 +11,44 @@ layout: default
   </header>
 
   <div class="post-content" itemprop="articleBody">
+    {% if page.repo or page.project_url %}
+      <div class="mb2">
+        {% if page.repo %}
+          <a class="mr1" href="{{ page.repo }}" target="_blank">Repository
+            <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        {% endif %}
+
+        {% if page.project_url %}
+          <a href="{{ page.project_url }}" target="_blank">Project website
+            <i class="fa fa-external-link" aria-hidden="true"></i></a>
+        {% endif %}
+      </div>
+    {% endif %}
+
     {{ content }}
+
+    {% if page.exchange_pairs %}
+      <hr>
+      <h4>Exchanges:</h4>
+
+      <table>
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Trading Pair</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for exchange in page.exchange_pairs %}
+          <tr>
+            <td data-label="Name">{{ exchange.name }}</td>
+            <td data-label="Pair"><a href="{{ exchange.link }}" target="_blank">{{ exchange.pair }}</a></td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    {% endif %}
+
   </div>
 
 </article>
