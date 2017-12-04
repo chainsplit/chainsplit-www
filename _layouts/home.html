@@ -58,7 +58,19 @@ layout: default
 
         <script type="text/javascript">
             $(".subway-map").subwayMap({ debug: false });
-            $(".subway-map").show();
+
+            $(window).width(function(){
+                if($(window).width() > 600){
+                    $(".subway-map").show();
+                }
+            })
+            $(window).resize(function(){
+                if($(window).width() > 600){
+                    $(".subway-map").show();
+                } else {
+                    $(".subway-map").hide();
+                    }
+            })
         </script>
         <img class="subway-img" style="display:none;" src="{{ '/assets/img/fork_img.png' | relative_url }}">
     </div>
