@@ -8,13 +8,42 @@
 
   <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title | escape }}" href="{{ "/feed.xml" | relative_url }}">
-  <!-- <link href="https://unpkg.com/basscss@8.0.2/css/basscss.min.css" rel="stylesheet"> -->
+
   <link href="https://unpkg.com/ace-css/css/ace.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
 
+   <style type="text/css">
+    /* The main DIV for the map */
+    .subway-map
+    {
+        margin: 0;
+        width:500px;
+        height:320px;
+        background-color: white;
+        background-image: url("{{ "/assets/img/logo_bw_wm.jpg" }}") ;
+        background-repeat: no-repeat;
+        background-position: 70px ;
+        background-size: 300px;
+    }
+
+    /* Text labels */
+    .text
+    {
+        text-decoration: none;
+        color: black;
+    }
+
+    .subway-map span
+    {
+        margin: 5px 5px 5px 0;
+    }
+
+    </style>
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <script src="{{ '/assets/js/lang.js' | relative_url }}"></script>
+  <script type="text/javascript" src="{{ "/assets/js/jquery.subwayMap-0.5.1.js" | relative_url }}"></script>
 
   {% if jekyll.environment == 'production' and site.google_analytics %}
   {% include google-analytics.html %}
