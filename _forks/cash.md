@@ -13,8 +13,9 @@ address_format: bitcoin (bech32 in discussion)
 repo: https://github.com/Bitcoin-ABC/bitcoin-abc
 exchange_pairs:
   - { name: 'Binance', pair: 'BCC/BTC', link: 'https://www.binance.com/trade.html?symbol=BCC_BTC' }
-  - { name: 'Bittrex', pair: 'BCC/BTC', link: 'https://bittrex.com/Market/Index?MarketName=BTC-BCC' }
   - { name: 'Bitfinex', pair: 'BCH/BTC', link: 'https://www.bitfinex.com/t/BCH:BTC' }
+  - { name: 'Bitstamp', pair: 'BCH/BTC', link: 'https://www.bitstamp.net/' }
+  - { name: 'Bittrex', pair: 'BCC/BTC', link: 'https://bittrex.com/Market/Index?MarketName=BTC-BCC' }
   - { name: 'Bit-Z', pair: 'BCH/BTC', link: 'https://www.bit-z.com/trade/bch_btc' }
   - { name: 'BTCC', pair: 'BCC/BTC', link: 'https://dax.btcc.com/' }
   - { name: 'CoinEgg', pair: 'BCH/BTC', link: 'https://www.coinegg.com/bch/' }
