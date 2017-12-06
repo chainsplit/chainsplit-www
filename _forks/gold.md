@@ -11,6 +11,14 @@ parent_chain: Bitcoin
 project_url: https://bitcoingold.org
 address_format: btg
 repo: https://github.com/BTCGPU/BTCGPU
+exchange_pairs:
+  - { name: 'Binance', pair: 'BTG/BTC', link: 'https://www.binance.com/trade.html?symbol=BTG_BTC' }
+  - { name: 'Bitfinex', pair: 'BTG/BTC', link: 'https://www.bitfinex.com/t/BTG:BTC' }
+  - { name: 'Bittrex', pair: 'BTG/BTC', link: 'https://bittrex.com/Market/Index?MarketName=BTC-BTG' }
+  - { name: 'Exrates', pair: 'BTG/BTC', link: 'https://lk.exrates.me/dashboard?name=BTC/BTG' }
+  - { name: 'HitBTC', pair: 'BTG/BTC', link: 'https://hitbtc.com/exchange/BTG-to-BTC' }
+  - { name: 'Huobi', pair: 'BTG/BTC', link: 'https://www.huobi.pro/ko-kr/btg_btc/exchange/' }
+  - { name: 'OKEx', pair: 'BTG/BTC', link: 'https://www.okex.com/spot/trade/index.do#btg_btc' }
 ---
 
 >fork of Bitcoin after segwit
@@ -32,9 +40,3 @@ repo: https://github.com/BTCGPU/BTCGPU
 - sighash changes - <a href="https://github.com/BTCGPU/BTCGPU/pull/109/"><i class="fa fa-external-link" aria-hidden="true"></i></a>
 
 - segwit address support - <a href="https://github.com/BTCGPU/BTCGPU/issues/215"><i class="fa fa-external-link" aria-hidden="true"></i></a>
-
-----
-
-<a href="{{ page.repo }}" target="_blank">Repository <i class="fa fa-external-link" aria-hidden="true"></i></a>
-
-<a href="{{ page.project_url }}" target="_blank">Project website <i class="fa fa-external-link" aria-hidden="true"></i></a>

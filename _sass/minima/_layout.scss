@@ -267,7 +267,7 @@
  */
 .page-content {
   padding-top: 90px;
-  padding-bottom: 120px;
+  padding-bottom: 140px;
 
   @include media-query($on-laptop) {
     padding-bottom: 200px;
@@ -307,7 +307,7 @@
  * Posts
  */
 .post-header {
-  margin-bottom: $spacing-unit;
+  margin-bottom: $spacing-unit / 2;
 }
 
 .post-title {

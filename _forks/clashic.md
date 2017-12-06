@@ -20,9 +20,3 @@ repo: https://github.com/Bitcoin-Clashic/bitcoin-clashic
 #### Technical Info:
 
 - Address Format: {{ page.address_format }}
-
-----
-
-<a href="{{ page.repo }}" target="_blank">Repository <i class="fa fa-external-link" aria-hidden="true"></i></a>
-
-<a href="{{ page.project_url }}" target="_blank">Project website <i class="fa fa-external-link" aria-hidden="true"></i></a>
