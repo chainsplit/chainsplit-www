@@ -24,7 +24,6 @@ html {
 body {
   height: 100%;
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
-  /* height: calc(100% - (100px)); */
   color: $text-color;
   background-color: $near-white-color;
   -webkit-text-size-adjust: 100%;

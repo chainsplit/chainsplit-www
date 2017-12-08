@@ -9,7 +9,8 @@
   width: 100%;
   z-index: 10;
   background: $background-color;
-  @include shadow(0, 1px, 1px, 1px, #111);
+  -webkit-box-shadow: 0 1px 1px 1px #111;
+  box-shadow: 0 1px 1px 1px #111;
 
   .wrap {
     max-width: $content-width;
@@ -79,7 +80,6 @@
   padding: 10px 24px 10px 10px;
   outline: 0;
   border: 0;
-  @include rounded-corners($btn-radius);
   background: $brand-color;
   color: $near-white-color;
   appearance: none;
@@ -346,69 +346,4 @@
       @include relative-font-size(1.125);
     }
   }
-}
-
-
-/* Button */
-.btn {
-    text-decoration: none;
-    cursor: pointer;
-    display: inline-block;
-    line-height: 1.125rem;
-    padding: .5rem 1rem;
-    margin: 0;
-    height: auto;
-    border: 1px solid transparent;
-    vertical-align: middle;
-    -webkit-appearance: none;
-    color: inherit;
-    background-color: transparent;
-    }
-
-.btn:hover {
-    text-decoration: none;
-}
-
-.btn:focus {
-    outline: none;
-    border-color: rgba(0, 0, 0, .125);
-    box-shadow: 0 0 0 3px rgba(0, 0, 0, .25);
-}
-
-::-moz-focus-inner {
-    border: 0;
-    padding: 0;
-}
-
-/* btn primary*/
-    .btn-primary {
-    color: #fff;
-    background-color: $btn-bgcolor-primary;
-    border-radius: $btn-radius;
-    }
-
-.btn-primary:hover {
-    box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, .0625);
-    color: #fff;
-}
-
-.btn-primary:active {
-    box-shadow: inset 0 0 0 20rem rgba(0, 0, 0, .125),
-    inset 0 3px 4px 0 gba(0, 0, 0, .25),
-	    0 0 1px rgba(0, 0, 0, .125);
-}
-
-.btn-primary:disabled,
-.btn-primary.is-disabled {
-    opacity: .5;
-}
-
-/**/
-.center{
-    text-align: center;
-}
-
-
-div.coins > div:nth-of-type(odd) {
-    background: #fafafa;
 }
