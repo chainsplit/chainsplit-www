@@ -18,7 +18,7 @@ layout: default
         <th>Segwit</th>
     </thead>
     <tbody>
-        {% assign forks = site.forks | sort: 'date' %}
+        {% assign forks = site.forks | sort: 'fork_date' %}
         {% for fork in forks %}
         {% if fork.hide == False %}
         <tr>

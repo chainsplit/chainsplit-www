@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: Diamond
-date: 2017-11-20
+fork_date: 2017-11-24
 block: 495866
 replay: No
 replay_bitcoin: No
