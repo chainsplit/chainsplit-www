@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: Cash
-date: 2017-11-13
+fork_date: 2017-11-13
 block: 504032
 replay: No
 replay_bitcoin: sighash_forkid

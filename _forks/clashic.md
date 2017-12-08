@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: Clashic
-date: 2017-08-01
+fork_date: 2017-08-01
 block: 478559
 replay: sighash_forkid
 replay_bitcoin: sighash_forkid

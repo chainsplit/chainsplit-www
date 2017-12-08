@@ -1,7 +1,7 @@
 ---
 layout: coin
 title: Gold
-date: 2017-10-25
+fork_date: 2017-10-23
 block: 491407
 replay: sighash_forkid
 replay_bitcoin: sighash_forkid
