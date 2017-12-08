@@ -1,6 +1,6 @@
 ---
 layout: coin
-title: SuperBitcoin
+title: Super
 fork_date: 2017-12-17
 block: 498888
 replay: No
