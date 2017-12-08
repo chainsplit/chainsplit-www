@@ -3,10 +3,79 @@ layout: default
 ---
 
 <header class="post-header">
-  <h1 class="post-title">Bitcoin hard forks</h1>
+  <h1 class="post-title">Bitcoin Forks</h1>
 </header>
 
-<p>A list of known Bitcoin hard forks, including forks-of-forks.</p>
+<p>An overview of Bitcoin hard forks, including forks-of-forks.</p>
+
+<hr >
+<div class="mxn2 flex flex-wrap">
+    <div class="md-col-8  ">
+        <div class="subway-map" style="display: none;position:relative;" data-columns="15" data-rows="8" data-cellSize="40" data-legendId="legend" data-textClass="text" data-gridNumbers="true" data-grid="false" data-lineWidth="8">
+            <ul data-color="#1f78b1" data-label="Bitcoin" data-shiftCoords="0,-1" >
+                <li data-coords="0.77,1"  data-labeltext="Bitcoin"> </li>
+                <li data-coords="0.77,0.77" data-marker="@interchange" > </li> <!-- marker-only node, moved up by 0.10 -->
+                <li data-coords="5,1"data-labeltext="segwit" > </li>
+                <li data-coords="15,1"  data-marker="" data-labelPos="E"> <a href="#" > Bitcoin</a></li>
+            </ul>
+
+            <ul data-color="#9fcde2" style="position:absolute;" data-labeltext="Diamond" data-label="Diamond">
+                 <li data-coords="9,0.77" data-labeltext="495866" > </li>
+                 <li data-coords="10,3" ></li>
+                 <li data-coords="15,3"  data-marker="" data-labelPos="E"><a href="/forks/diamond.html" > Diamond </a> </li>
+            </ul>
+
+            <ul data-color="#5f9dc2" data-label="Superbitcoin">
+                 <li data-coords="11,0.77" data-labeltext="498888" > </li>
+                 <li data-coords="11.9,2" data-dir="E" ></li>
+                 <li data-coords="15,2" data-marker=""  data-labelPos="E"> <a href="/forks/superbitcoin.html" > Superbitcoin</a> </li>
+            </ul>
+
+            <ul data-color="#7fbdd2" data-label="Clashic">
+                 <li data-coords="3,0.77" data-labeltext="478559">
+                 <li data-coords="5.5,6" data-labeltext="Clashic"></li>
+                 <li data-coords="15,6" data-marker=""  data-labelPos="E"> <a href="/forks/clashic.html" > Clashic</a></li>
+            </ul>
+
+            <ul data-color="#5f9db2" data-label="BGold">
+                 <li data-coords="7,0.77" data-labeltext="491407" > </li>
+                 <li data-coords="8.5,4" data-dir="E" ></li>
+                 <li data-coords="15,4" data-marker=""  data-labelPos="E"> <a href="/forks/gold.html" > Gold</a></li>
+            </ul>
+
+            <ul data-color="#429fbd" data-label="2x">
+                 <li data-coords="10,4" data-labeltext="494784" > </li>
+                 <li data-coords="11,5" data-dir="E"  ></li>
+                 <li data-coords="15,5" data-marker=""  data-labelPos="E"> <a href="/forks/2x.html" > 2X</a> </li>
+            </ul>
+
+            <ul data-color="#5f9dc2" data-label="Cash">
+                 <li data-coords="12,6" data-marker="station" data-labeltext="504032" > </li>
+                 <li data-coords="13,7" data-dir="E" ></li>
+                 <li data-coords="15,7" data-marker=""  data-labelPos="E" ><a href="/forks/cash.html" > Cash</a> </li>
+            </ul>
+        </div>
+
+        <script type="text/javascript">
+            $(".subway-map").subwayMap({ debug: false });
+
+            $(window).width(function(){
+                if($(window).width() > 600){
+                    $(".subway-map").show();
+                }
+            })
+            $(window).resize(function(){
+                if($(window).width() > 600){
+                    $(".subway-map").show();
+                } else {
+                    $(".subway-map").hide();
+                    }
+            })
+        </script>
+        <img class="subway-img" style="display:none;" src="{{ '/assets/img/fork_img.png' | relative_url }}">
+    </div>
+
+</div>
 
 <table>
     <thead>
@@ -46,4 +115,6 @@ layout: default
     </tbody>
 </table>
 
-<p>Disclaimer: We do not endorse any forks. Instead, we provide known information about them that is subject to change as we continue to learn more.</p>
+<p><i>Disclaimer: We do not endorse any forks. Instead, we provide known information about them that is subject to change as we continue to learn more.</i></p>
+
+<br />

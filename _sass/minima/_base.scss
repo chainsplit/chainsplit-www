@@ -305,3 +305,12 @@ table {
 
   td:before { content: attr(data-label); }
 }
+
+@include media-query($on-palm){
+ .subway-map{
+    display : none;
+ }
+ .subway-img{
+   display : block !important;
+ }
+}

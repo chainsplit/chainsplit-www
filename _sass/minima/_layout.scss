@@ -7,7 +7,7 @@
   padding-top: 5px;
   position: fixed;
   width: 100%;
-  z-index: 10;
+  z-index: 4000;
   background: $background-color;
   @include shadow(0, 1px, 1px, 1px, #111);
 
